@@ -8,7 +8,7 @@ const numbers = ref([4,6,8,3,7])
 
 <template>
   <main>
-    <Parent :numbers="numbers"/>
+    <Parent />
   </main>
 </template>
 
