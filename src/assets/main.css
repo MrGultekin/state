@@ -1,0 +1,12 @@
+@import './base.css';
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.67em 0;
+}
