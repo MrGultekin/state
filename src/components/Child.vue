@@ -8,9 +8,9 @@ const {numbers} = defineProps(['numbers'])
 <template>
   <div>
 <!--     Let's render the numbers that we passed from the Parent component-->
-    <h1>Child Component {{numbers}}</h1>
+    <h1>Child Component</h1>
     <div class="line"></div>
-    <GrandChild/>
+    <GrandChild :numbers="numbers"/>
 
   </div>
 </template>
