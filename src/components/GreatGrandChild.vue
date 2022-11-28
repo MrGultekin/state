@@ -1,16 +1,12 @@
 <script setup>
-import {inject} from "vue";
+import useNumbers from "@/composables/useNumbers";
 
-const numbers = inject('numbers')
-
-const addNumber0 = (num) => {
-  numbers.value.push(num)
-}
+const {numbers,filterMinNumber} = useNumbers()
 </script>
+
 <template>
   <div>
-    <h1>GreatGrandChild Component {{numbers}}</h1>
-    <button @click="addNumber0(0)">Add 0</button>
+    <h1>GreatGrandChild Component {{filterMinNumber(8)}}</h1>
     <div class="line"></div>
   </div>
 </template>
