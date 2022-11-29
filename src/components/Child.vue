@@ -1,14 +1,14 @@
 <script setup>
 import GrandChild from './GrandChild.vue'
-import useNumbers from "@/composables/useNumbers";
+import useNumberStore from "@/composables/useNumbers";
 
-const {numbers,addNumber} = useNumbers()
+const {numbers,addNumber} = useNumberStore()
 </script>
 
 <template>
   <div>
     <h1>Child Component {{numbers}}</h1>
-    <button @click="addNumber(5)">Add 5</button>
+    <button @click="addNumber(99)">Add 5</button>
     <div class="line"></div>
     <GrandChild />
 

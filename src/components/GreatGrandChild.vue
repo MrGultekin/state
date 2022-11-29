@@ -1,7 +1,7 @@
 <script setup>
-import useNumbers from "@/composables/useNumbers";
+import {useNumbersStore} from "@/stores/numbers";
 
-const {numbers,filterMinNumber} = useNumbers()
+const {numbers,filterMinNumber} = useNumbersStore()
 </script>
 
 <template>
